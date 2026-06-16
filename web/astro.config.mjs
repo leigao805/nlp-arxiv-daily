@@ -6,11 +6,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 const isProd = process.env.NODE_ENV === "production";
 
-// Custom domain (monologg.kr) is the production target. The repo is also
-// deployed under the /nlp-arxiv-daily path historically, so we keep that
-// base prefix to preserve external links once cutover happens (PRSL-77).
 export default defineConfig({
-  site: isProd ? "https://monologg.kr" : undefined,
+  site: isProd ? "https://leigao805.github.io" : undefined,
   base: isProd ? "/nlp-arxiv-daily" : undefined,
   // Pagefind indexes "directory" outputs by default (`/foo/index.html`); the
   // integration's docs note `format: "file"` works too, but we stick with the
